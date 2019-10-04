@@ -2,7 +2,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
         </form>
         <ul class="navbar-nav mr-auto">
 
@@ -12,14 +12,14 @@
                 <a class="nav-link" href="#"><i class="fas fa-keyboard"></i> Post List</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#"><i class='fas fa-home'></i> Home </a>
+                <a class="nav-link" href="home.php"><i class='fas fa-home'></i> Home </a>
             </li>
 
             <li class="nav-item dropdown ml-auto">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class='far fa-user-circle' style='font-size:24px'></i></a>
                 <div class="dropdown-menu dropdown-menu-right">
-            
-                    <a href="#"class="dropdown-item">Logout</a>
+
+                    <a href="#"class="dropdown-item"><i class="fa fa-sign-out"></i> Logout</a>
                 </div>
             </li>
         </ul>
