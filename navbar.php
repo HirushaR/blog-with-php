@@ -9,14 +9,16 @@
         </ul>
         <ul class="navbar-nav ">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#"><i class="fas fa-keyboard"></i> Post List</a>
             </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><i class='fas fa-home'></i> Home </a>
+            </li>
+
             <li class="nav-item dropdown ml-auto">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class='far fa-user-circle' style='font-size:24px'></i></a>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a href="#" class="dropdown-item">Reports</a>
-                    <a href="#" class="dropdown-item">Settings</a>
-                    <div class="dropdown-divider"></div>
+            
                     <a href="#"class="dropdown-item">Logout</a>
                 </div>
             </li>
