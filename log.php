@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "query/db.php";
 
 if (isset($_POST['sign-inbtn'])) {
@@ -12,7 +13,8 @@ if (isset($_POST['sign-inbtn'])) {
     if ($check_user)
     {
         #echo "logged in";
-       echo "<script>window.location.replace(\"home.php\");</script>";
+        $_SESSION['login_user']= $email;
+       header("Location: home.php");
     }
     else
     {

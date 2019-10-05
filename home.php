@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
 <head>
     <title>Home</title>
@@ -13,6 +16,7 @@
 <body>
 <?php
 include "navbar.php";
+$user = $_SESSION['login_user'];
 ?>
 
 <div class="row">
