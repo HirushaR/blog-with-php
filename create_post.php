@@ -20,7 +20,7 @@ include "navbar.php";
 <div class="container">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
-        <form method="post">
+        <form method="post" action="create.php">
             <div class="panel-heading">
                 <h4>Create post</h4>
             </div>
