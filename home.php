@@ -16,7 +16,7 @@ session_start();
 <body>
 <?php
 include "navbar.php";
-$user = $_SESSION['login_user'];
+
 ?>
 
 <div class="row">
@@ -35,61 +35,9 @@ $user = $_SESSION['login_user'];
                         <th><i class="far fa-calendar-alt"></i> Publish At</th>
                         <th><i class="fas fa-cogs"></i> Action</th>
                     </tr>
-                    <tr>
-                        <td>morbi tempor commodo mattis</td>
-                        <td>anna_admin@symfony</td>
-                        <td>2019/01/20</td>
-                        <td>
-                            <button class="btn btn-secondary">visit</button>
-                            <button class="btn btn-primary">Edit</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>morbi tempor commodo mattis</td>
-                        <td>anna_admin@symfony</td>
-                        <td>2019/01/20</td>
-                        <td>
-                            <button class="btn btn-secondary">visit</button>
-                            <button class="btn btn-primary">Edit</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>morbi tempor commodo mattis</td>
-                        <td>anna_admin@symfony</td>
-                        <td>2019/01/20</td>
-                        <td>
-                            <button class="btn btn-secondary">visit</button>
-                            <button class="btn btn-primary">Edit</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>morbi tempor commodo mattis</td>
-                        <td>anna_admin@symfony</td>
-                        <td>2019/01/20</td>
-                        <td>
-                            <button class="btn btn-secondary">visit</button>
-                            <button class="btn btn-primary">Edit</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>morbi tempor commodo mattis</td>
-                        <td>anna_admin@symfony</td>
-                        <td>2019/01/20</td>
-                        <td>
-                            <button class="btn btn-secondary">visit</button>
-                            <button class="btn btn-primary">Edit</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>morbi tempor commodo mattis</td>
-                        <td>anna_admin@symfony</td>
-                        <td>2019/01/20</td>
-                        <td>
-                            <button class="btn btn-secondary">visit</button>
-                            <button class="btn btn-primary">Edit</button>
-                        </td>
-                    </tr>
-
+                    <?php
+                        get_posts();
+                    ?>
                 </table>
             </div>
         </div>
