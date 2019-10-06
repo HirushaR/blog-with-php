@@ -26,13 +26,42 @@ include "navbar.php";
         <div class="container">
            <?php
             show_single_post();
+           $id = $_GET['id'];
            ?>
         </div>
         <hr>
+        <div class="commnt" style="margin: 40px;">
+            <div id="one">
+                <div class="show-comment">
+                    <u><i>hirusharandunu11@gmail.com</i></u><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae iure officia praesentium quae quam rerum? Blanditiis, exercitationem hic minus natus placeat quam rem tempora? Fugiat itaque officia omnis quasi!</p>
+                </div>
+                <div id="tow" style="display: none">
+                    <div class="create">
+                        <form action="create_comment.php" method="post">
+                            <div class="form-group">
+                                <input type="text" name="comment" id="comment" class="form-control" placeholder="add a comment">
+                                <input type="hidden" name="post_id" id="post_id" value="<?php echo $id ?>">
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <a href="javascript:showDiv()"> comment</a>
+            </div>
+        </div>
     </div>
 
 </div>
 
 </body>
+<script>
+    function showDiv() {
+        div = document.getElementById('tow');
+        div.style.display = "block";
+    }
+</script>
+
 
 </html>
