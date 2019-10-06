@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "query/db.php";
+include "function/db.php";
 
 if (isset($_POST['sign-inbtn'])) {
 

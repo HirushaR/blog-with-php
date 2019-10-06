@@ -1,6 +1,6 @@
 <?php
 session_start();
- include "query/db.php";
+include "function/db.php";
 
  $title = $_POST['title'];
  $content = $_POST['summernote'];

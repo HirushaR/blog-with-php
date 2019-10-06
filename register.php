@@ -5,7 +5,7 @@
  * Date: 9/30/2019
  * Time: 2:29 PM
  */
-include "query/db.php";
+include "function/db.php";
 
 if (isset($_POST['register-btn'])) {
 

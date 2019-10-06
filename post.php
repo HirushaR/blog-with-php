@@ -36,9 +36,9 @@ include "navbar.php";
                         <th><i class="far fa-calendar-alt"></i> Publish At</th>
                         <th><i class="fas fa-cogs"></i> Action</th>
                     </tr>
-               <?php
+                    <?php
                     get_post();
-               ?>
+                    ?>
                 </table>
             </div>
         </div>
