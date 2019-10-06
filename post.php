@@ -33,8 +33,9 @@ include "navbar.php";
         <div class="commnt" style="margin: 40px;">
             <div id="one">
                 <div class="show-comment">
-                    <u><i>hirusharandunu11@gmail.com</i></u><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae iure officia praesentium quae quam rerum? Blanditiis, exercitationem hic minus natus placeat quam rem tempora? Fugiat itaque officia omnis quasi!</p>
+                    <?php
+                    show_comment($id);
+                    ?>
                 </div>
                 <div id="tow" style="display: none">
                     <div class="create">

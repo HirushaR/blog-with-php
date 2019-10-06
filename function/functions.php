@@ -71,3 +71,43 @@ function show_single_post()
     }
 
 }
+
+function show_comment($id)
+{
+    global $con;
+    $post_id = $id;
+    $auth_email = $_SESSION['login_user'];
+    $get_comment = "select * from comment where post_id='".$post_id."'";
+    $query = mysqli_query($con, $get_comment);
+    $result =  mysqli_num_rows($query);
+    if ($result) {
+        while ($row = mysqli_fetch_array($query)) {
+            $comment = $row['comment'];
+            $user_id = $row['user_id'];
+            $get_user_id ="SELECT email FROM users WHERE id='".$user_id."'";
+            $result = mysqli_query($con, $get_user_id);
+            $row = mysqli_fetch_assoc($result);
+            $email= $row['email'];
+
+
+            if ($auth_email == $email)
+            {
+                echo "
+                <u> <i><h6>$email  </h6> </i></u>
+                <p>$comment</p> 
+                <a href=''>edit</a>  
+                 <hr>
+              
+            ";
+            }
+            else
+            {
+                echo "
+                <u> <i><h6>$email</h6></i></u>
+                <p>$comment</p>   
+            ";
+            }
+
+        }
+    }
+}
