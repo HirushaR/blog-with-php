@@ -5,7 +5,7 @@ include "function/db.php";
  $title = $_POST['title'];
  $content = $_POST['summernote'];
  $user = $_SESSION['login_user'];
-$time = time();
+ $time = time();
 
  $get_user_id ="SELECT id FROM users WHERE email='".$user."'";
  $result = mysqli_query($con, $get_user_id);
