@@ -31,13 +31,10 @@ include "navbar.php";
             <div class="form-group">
                 <textarea name="summernote" id="summernote" cols="30" rows="10" class="form-control"> </textarea>
             </div>
-            <div class="form-group">
-                <input type="text" name="members" id="title" class="form-control">
-            </div>
+
             <div class="form-group">
                 <input type="submit" name="send" id="send" value="Publish" class="btn btn-primary">
                 <input type="button" name="clear" id="clear" class="btn btn-danger pull-right" value="Clear">
-
             </div>
         </form>
     </div>

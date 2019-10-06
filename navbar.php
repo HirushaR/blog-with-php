@@ -23,9 +23,13 @@
                 <div class="dropdown-menu dropdown-menu-right">
                     <?php
                     $user = $_SESSION['login_user'];
+                    if($user=="")
+                    {
+                        header("location:index.html");
+                    }
                     ?>
                     <a href="#"class="dropdown-item"><i class="fa fa-sign-out"></i> <?php echo $user; ?></a>
-                    <a href="#"class="dropdown-item"><i class="fa fa-sign-out"></i> Logout</a>
+                    <a href="logout.php"class="dropdown-item"><i class="fa fa-sign-out"></i> Logout</a>
                 </div>
 
              </li>
