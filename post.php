@@ -31,6 +31,7 @@ include "navbar.php";
         </div>
         <hr>
         <div class="commnt" style="margin: 40px;">
+
             <div id="one">
                 <div class="show-comment">
                     <?php
@@ -52,7 +53,13 @@ include "navbar.php";
                 <a href="javascript:showDiv()"> comment</a>
             </div>
         </div>
+        <nav aria-label="Page navigation example">
+            <ul class=pagination>
+                <li id="previous-page"><a href="javascript:void(0)" aria-label=Previous><span aria-hidden=true>&laquo;</span></a></li>
+            </ul>
+        </nav>
     </div>
+
 
 </div>
 
@@ -62,7 +69,11 @@ include "navbar.php";
         div = document.getElementById('tow');
         div.style.display = "block";
     }
-</script>
 
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="script/scripts.js"></script>
 
 </html>

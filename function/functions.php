@@ -90,7 +90,8 @@ function show_comment($id)
             if ($auth_email == $email)
             {
                 echo "
-                <u> <i><h6>$email</h6> </i></u>
+                <div class='list-group'>
+                 <u> <i><h6>$email</h6> </i></u>
                 <p id='comment'>$comment</p>
                 <div id='edit' style='display: none'>
                         <form action='edit_comment.php' method='post'>
@@ -99,7 +100,9 @@ function show_comment($id)
                                <input type='hidden' name='post_id' value='$post_id'>
                         </form>
                 </div>
-                <a href='javascript:editComment()'>edit</a>     
+                <a href='javascript:editComment()'>edit</a>    
+                </div>
+                
                 <script >
                     function editComment() {
                       document.getElementById(\"comment\").style.display=\"none\";
@@ -112,12 +115,15 @@ function show_comment($id)
             else
             {
                 echo "
+                <div class='list-group'>
                 <u> <i><h6>$email</h6></i></u>
                 <p>$comment</p>   
+                </div>
             ";
             }
 
         }
+
     }
 }
 
