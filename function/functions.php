@@ -29,7 +29,7 @@
                         <td>$create</td>
                         <td>
                             <a href='post.php?id=$id'><button class=\"btn btn-secondary\">show</button></a>
-                            <button class=\"btn btn-primary\">Edit</button>
+                           <a href='edit_post?id=$id'><button class=\"btn btn-primary\">Edit</button></a> 
                         </td>
                 </tr>
                 
@@ -119,4 +119,41 @@ function show_comment($id)
 
         }
     }
+}
+
+function edit_post($id)
+{
+    global $con;
+    $post_id = $id;
+    $show = "select * from posts where id='".$post_id."'";
+    $query_1 = mysqli_query($con, $show);
+    $row = mysqli_fetch_assoc($query_1);
+    $title= $row['title'];
+    $content = $row['content'];
+    $user = $row['user_id'];
+    $create = $row['created_at'];
+
+
+    echo "
+         <div class=\"col-sm-8\">
+        <form method=\"post\" action=\"edit_single_post.php\">
+            <div class=\"panel-heading\">
+                <h4>edit post</h4>
+            </div>
+            <div class=\"form-group\">
+                <label for=\"title\">Title</label>
+                <input type=\"text\" name=\"title\" id=\"title\" class=\"form-control\" placeholder='$title'>
+                <input type='hidden' value='$post_id' name='post_id'>
+            </div>
+            <div class=\"form-group\">
+                <textarea name=\"summernote\" id=\"summernote\" cols=\"30\" rows=\"10\" class=\"form-control\">$content </textarea>
+            </div>
+
+            <div class=\"form-group\">
+                <input type=\"submit\" name=\"send\" id=\"send\" value=\"Publish\" class=\"btn btn-primary\">
+                <input type=\"button\" name=\"clear\" id=\"clear\" class=\"btn btn-danger pull-right\" value=\"Clear\">
+            </div>
+        </form>
+    </div>
+    ";
 }
