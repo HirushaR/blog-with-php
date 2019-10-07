@@ -92,7 +92,7 @@ function show_comment($id)
                 echo "
                 <div class='list-group'>
                  <u> <i><h6>$email</h6> </i></u>
-                <p id='comment'>$comment</p>
+                <p id='comment' style='color: rgb(3, 102, 214);'>$comment</p>
                 <div id='edit' style='display: none'>
                         <form action='edit_comment.php' method='post'>
                                <input type='text' id='edit-comment' name='edit-comment' placeholder='$comment'>

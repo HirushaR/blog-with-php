@@ -20,7 +20,7 @@
 
 				</nav>
             </header>
-            <section>				
+            <section>
                 <div id="container_demo" >
                     <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
                     <a class="hiddenanchor" id="toregister"></a>
@@ -29,23 +29,22 @@
                         <div id="login" class="animate form">
                             <form action="log.php" method="post" autocomplete="on">
                                 <h1>Log in</h1>
-                                <p> 
+                                <p>
                                     <label for="username" class="uname" data-icon="u" > Your email </label>
                                     <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
                                 </p>
-                                <p> 
+                                <p>
                                     <label for="password" class="youpasswd" data-icon="p"> Your password </label>
-                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
                                 </p>
-                                <p class="keeplogin"> 
-									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+                                <p class="keeplogin">
+									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
 									<label for="loginkeeping">Keep me logged in</label>
 								</p>
-                                <p class="keeplogin">
-                                    <a href="#"><label for="loginkeeping">forget password</label> </a>
-
+                                <p class="forget-password">
+                                    <a href="forget_pasword.php"><label for="forget-password">forget password</label> </a>
                                 </p>
-                                <p class="login button"> 
+                                <p class="login button">
                                     <input type="submit" value="Login" name="sign-inbtn" />
 								</p>
                                 <p class="change_link">
@@ -57,35 +56,35 @@
 
                         <div id="register" class="animate form">
                             <form action="register.php" method="post" autocomplete="on">
-                                <h1> Sign up </h1> 
-                                <p> 
+                                <h1> Sign up </h1>
+                                <p>
                                     <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
                                     <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
                                 </p>
-                                <p> 
+                                <p>
                                     <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
-                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/>
                                 </p>
-                                <p> 
+                                <p>
                                     <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
                                     <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
                                 </p>
-                                <p> 
+                                <p>
                                     <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
                                     <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
                                 </p>
-                                <p class="signin button"> 
+                                <p class="signin button">
 									<input type="submit" value="Sign up" name="register-btn"/>
 								</p>
-                                <p class="change_link">  
+                                <p class="change_link">
 									Already a member ?
 									<a href="#tologin" class="to_register"> Go and log in </a>
 								</p>
                             </form>
                         </div>
-						
+
                     </div>
-                </div>  
+                </div>
             </section>
         </div>
     </body>

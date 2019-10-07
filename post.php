@@ -42,7 +42,7 @@ include "navbar.php";
                     <div class="create">
                         <form action="create_comment.php" method="post">
                             <div class="form-group">
-                                <input type="text" name="comment" id="comment" class="form-control" placeholder="add a comment">
+                                <input type="text" name="comment" id="comment" class="form-control" placeholder="add a comment" required>
                                 <input type="hidden" name="post_id" id="post_id" value="<?php echo $id ?>">
 
                             </div>
