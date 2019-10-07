@@ -163,3 +163,38 @@ function edit_post($id)
     </div>
     ";
 }
+
+function get_user()
+{
+    global $con;
+    $users = "select * from users";
+    $query = mysqli_query($con, $users);
+    $result = mysqli_num_rows($query);
+    if ($result)
+    {
+        while($row=mysqli_fetch_array($query))
+        {
+            $id = $row['id'];
+            $name = $row['name'];
+            $email= $row['email'];
+            $date = $row['created_at'];
+
+            echo "
+                <tr>
+                        <td>$id</td>
+                        <td>$name</td>
+                        <td>$email</td>
+                        <td>$date</td>
+                        <td>
+                            <a href='delete_user.php?id=$id'><button class=\"btn btn-secondary\">delete</button></a>
+                            
+                        </td>
+                </tr>
+                
+        
+         ";
+        }
+    }
+
+}
+
